@@ -1,0 +1,288 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#081b29;
+    color:white;
+}
+
+/* Navbar */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 5%;
+    background:#081b29;
+    box-shadow:0 0 10px rgba(0,238,255,0.2);
+    z-index:1000;
+}
+
+.logo{
+    font-size:35px;
+    font-weight:bold;
+    color:#00eeff;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.navbar ul li a:hover{
+    color:#00eeff;
+}
+
+/* Hero Section */
+
+.home{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 10% 80px;
+}
+
+.home-content{
+    width:55%;
+}
+
+.home-content h1{
+    font-size:3.5rem;
+    margin-bottom:10px;
+}
+
+.home-content h3{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.home-content span{
+    color:#00eeff;
+}
+
+.home-content p{
+    margin-top:20px;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* Profile Image */
+
+.home-img{
+    width:45%;
+    display:flex;
+    justify-content:center;
+}
+
+.home-img img{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #00eeff;
+
+    box-shadow:
+    0 0 20px #00eeff,
+    0 0 40px #00eeff,
+    0 0 80px #00eeff;
+
+    transition:0.4s;
+}
+
+.home-img img:hover{
+    transform:scale(1.05);
+}
+
+/* Social Icons */
+
+.social-icons{
+    margin-top:25px;
+}
+
+.social-icons a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:50px;
+    height:50px;
+    border:2px solid #00eeff;
+    border-radius:50%;
+    margin-right:12px;
+    color:#00eeff;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    background:#00eeff;
+    color:#081b29;
+    transform:translateY(-5px);
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    margin-right:15px;
+    padding:12px 25px;
+    background:#00eeff;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px #00eeff;
+}
+
+/* Sections */
+
+section{
+    padding:50px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#00eeff;
+    font-size:2.2rem;
+}
+
+/* Skills */
+
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.skill-box{
+    display:inline-block;
+    padding:12px 20px;
+    background:#112e42;
+    margin:10px;
+    border-radius:10px;
+    border:2px solid #00eeff;
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.skill-box:hover{
+    background:#00eeff;
+    color:#081b29;
+    transform:translateY(-5px);
+}
+
+/* Cards */
+
+.card{
+    background:#112e42;
+    padding:25px;
+    margin:10px 0;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px #00eeff;
+}
+
+.card h3{
+    color:#00eeff;
+    margin-bottom:10px;
+}
+
+.card p{
+    line-height:1.8;
+}
+
+/* Contact */
+
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+#contact a{
+    color:#00eeff;
+    text-decoration:none;
+}
+
+#contact a:hover{
+    text-decoration:underline;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .navbar ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .home{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:40px;
+        padding-top:180px;
+    }
+
+    .home-content{
+        width:100%;
+    }
+
+    .home-img{
+        width:100%;
+    }
+
+    .home-img img{
+        width:250px;
+        height:250px;
+    }
+
+    .logo{
+        font-size:28px;
+    }
+
+    .home-content h1{
+        font-size:2.5rem;
+    }
+
+    .home-content h3{
+        font-size:1.5rem;
+    }
+}
